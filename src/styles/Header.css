@@ -1,8 +1,11 @@
 .header-div {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
     margin: 30px 100px;
+    gap: 1rem;
+    position: relative;
 }
 
 .search-container {
@@ -16,6 +19,7 @@
     width: 900px;
     border-radius: 4px;
     padding: 0 30px;
+    border: 1px solid #E0E0E0;
 }
 
 .search-icon {
@@ -27,12 +31,6 @@
     font-size: 1rem;
 }
 
-.register-login {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
 .register-link {
     font-size: 16px;
     color: #474747;
@@ -42,9 +40,11 @@
 .login-link {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 14px;
     color: white;
     font-weight: bold;
+    height: 100%;
 }
 
 .login-button {
@@ -52,6 +52,132 @@
     width: 114px;
     background-color: #C92071;
     border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+/* Estilos do hambúrguer */
+.hamburger {
+    display: none;
     flex-direction: column;
-    align-content: center;
+    cursor: pointer;
+    gap: 5px;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    height: 3px;
+    background: #333;
+    width: 25px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Menu Mobile */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.mobile-menu-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mobile-menu-content nav ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.mobile-menu-content nav ul li a {
+    padding: 8px 0;
+    display: block;
+    color: #666666;
+    text-decoration: none;
+}
+
+.mobile-menu-content nav ul li a:hover,
+.mobile-menu-content nav ul li a.active {
+    color: #C92071;
+    text-decoration: underline;
+}
+
+.mobile-auth {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Estilos para desktop */
+.desktop-auth {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu-bar-desktop {
+    display: block;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .header-div {
+        margin: 20px;
+    }
+
+    .search-container,
+    .desktop-auth,
+    .menu-bar-desktop {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Efeito de animação para o hambúrguer */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+
+@media (min-width: 769px) {
+    .hamburger,
+    .mobile-menu {
+        display: none;
+    }
 }
