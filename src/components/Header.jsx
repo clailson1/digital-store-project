@@ -3,54 +3,80 @@ import miniCart from "../assets/mini-cart.svg";
 import Logo from "./Logo";
 import "../styles/Header.css";
 import MenuBar from "./MenuBar";
+import SearchBar from "./SearchBar";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+    if (searchOpen) setSearchOpen(false); // Fecha a busca se estiver aberta
+  };
+
+  const toggleSearch = () => {
+    setSearchOpen(!searchOpen);
+    if (menuOpen) setMenuOpen(false); // Fecha o menu se estiver aberto
+  };
 
   return (
     <div className="header-div">
       <div className="top-bar">
-        <Logo />
-
-        <div id="search-bar" className="search-container">
-          <input 
-            type="text" 
-            id="search" 
-            name="search"
-            placeholder="Pesquisar Produto..."
-            className="search-input"
-          />
-          <i className="pi pi-search search-icon" />
+        <div className="left-section">
+          <div className="hamburger" onClick={toggleMenu}>
+            <span />
+            <span />
+            <span />
+          </div>
+          <div className="logo-header">
+            <Logo />
+          </div>
         </div>
 
-        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-          <span />
-          <span />
-          <span />
+        <div className="center-section">
+          <div className="search-container">
+            <SearchBar />
+          </div>
         </div>
 
-        <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
-          <div className="mobile-menu-content">
-            <MenuBar />
-            <div className="mobile-auth">
-              <a href="" className="register-link">Cadastre-se</a>
-              <div className="login-button">
-                <a href="" className="login-link">Entrar</a>
-              </div>
+        <div className="right-section">
+          <div className="mobile-icons">
+            <i 
+              className={`pi pi-search mobile-search-icon ${searchOpen ? "active" : ""}`}
+              onClick={toggleSearch}
+            />
+            <img src={miniCart} alt="Carrinho" className="cart-icon" />
+          </div>
+
+          <div className="desktop-auth">
+            <a href="#" className="register-link">Cadastre-se</a>
+            <div className="login-button">
+              <a href="#" className="login-link">Entrar</a>
             </div>
+            <img src={miniCart} alt="Carrinho" className="cart-icon" />
           </div>
-        </div>
-
-        <div className="desktop-auth">
-          <a href="" className="register-link">Cadastre-se</a>
-          <div className="login-button">
-            <a href="" className="login-link">Entrar</a>
-          </div>
-          <img src={miniCart} alt="Carrinho" className="cart-icon" />
         </div>
       </div>
 
-      {/* MenuBar apenas para desktop */}
+      {searchOpen && (
+        <div className="mobile-search-container">
+          <SearchBar />
+        </div>
+      )}
+
+      <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
+        <div className="mobile-menu-content">
+          <MenuBar />
+          <div className="menu-divider"></div>
+          <div className="mobile-auth">
+            <a href="#" className="register-link">Cadastre-se</a>
+            <div className="login-button">
+              <a href="#" className="login-link">Entrar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="menu-bar-desktop">
         <MenuBar />
       </div>
