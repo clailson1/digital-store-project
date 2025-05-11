@@ -1,0 +1,40 @@
+.general-section {
+    /* display: flex; */
+    position: relative;
+    margin: 20px;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+}
+
+.title-section {
+    display: flex;
+    /* justify-content: flex-start; */
+    /* background-color: blueviolet; */
+    color: var(--dark-gray-2);
+    font-size: 24px;
+}
+
+.link-section {
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* background-color: rgb(169, 206, 175); */
+    position: absolute;
+    right: 30px;
+    top: 28px;
+}  
+
+.link-section > a{
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 18px;
+    
+}
+
+.children-section {
+    display: flex;
+    justify-content: center;
+}
