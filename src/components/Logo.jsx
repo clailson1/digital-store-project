@@ -1,6 +1,6 @@
-import logo from '../assets/logo-header.svg';
+// import logo from '../assets/logo-header.svg';
 
-const Logo = () => {
+const Logo = ({ logo }) => {
     return (  
         <>
             <img 

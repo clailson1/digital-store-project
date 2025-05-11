@@ -1,0 +1,32 @@
+footer {
+    background-color: var(--dark-gray);
+    color: var(--white);
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-info {
+    display: flex;
+    padding: 100px 100px 20px 100px;
+    gap: 150px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 30px;
+}
+
+hr {
+    margin: 0 100px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    padding: 10px 30px 30px 30px;
+}
+
+
