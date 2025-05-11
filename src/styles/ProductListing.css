@@ -1,0 +1,28 @@
+.product-card-global {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha */
+    gap: 20px; /* Espaço entre os cards */
+    padding: 20px;
+    background-color: var(--light-gray-3);
+}
+
+.product-card {
+    /* background-color: aqua; */
+    flex: 1 1 calc(25% - 20px); /* Cresce, encolhe e tem base de 25% - gap */
+    min-width: 200px; /* Largura mínima para cada card */
+    max-width: calc(25% - 20px); /* Largura máxima para garantir 4 por linha */
+    box-sizing: border-box; /* Considera padding e border no cálculo do tamanho */
+    padding: 20px;
+    background: var(--white);
+    border-radius: 8px;
+    /* box-shadow: 0 2px 4px rgba(0,0,0,0.1); Sombra */
+}
+
+.product-image {
+    width: 100%; /* Ocupa 100% da largura do card */
+    height: auto; /* Mantém a proporção */
+    max-height: 200px; /* Altura máxima (opcional) */
+    object-fit: contain; /* Garante que a imagem inteira seja visível */
+    border-radius: 4px; /* Opcional: bordas arredondadas na imagem */
+    margin-bottom: 15px; /* Espaço abaixo da imagem */
+}
