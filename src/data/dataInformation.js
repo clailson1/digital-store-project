@@ -1,0 +1,79 @@
+// Lista Informação
+export const title1 = "Informação";
+export const object1 = [
+    {
+      id: 0,
+      "text": "Sobre Drip Store",
+      "link": "/about"
+    },
+    {
+      id: 1,
+      "text": "Blog",
+      "link": "/blog"
+    },
+    {
+      id: 2,
+      "text": "Wishlist",
+      "link": "/caminho"
+  },
+  {
+      id: 3,
+      "text": "Blog",
+      "link": "/caminho"
+  },
+  {
+      id: 4,
+      "text": "Trabalhe conosco",
+      "link": "/caminho"
+  },
+  {
+      id: 5,
+      "text": "Meus Pedidos",
+      "link": "/caminho"
+  }
+];
+
+// Lista Categorias
+export const title2 = "Categorias";
+export const object2 = [
+    {
+        id: 0,
+        "text": "Camisetas",
+        "link": "/caminho"
+    },
+    {
+        id: 1,
+        "text": "Calças",
+        "link": "/caminho"
+    },
+    {
+        id: 2,
+        "text": "Bonés",
+        "link": "/caminho"
+    },
+    {
+        id: 3,
+        "text": "Headphones",
+        "link": "/caminho"
+    },
+    {
+        id: 4,
+        "text": "Tênis",
+        "link": "/caminho"
+    }
+];
+
+// Lista Contato
+export const title3 = "Contato";
+export const object3 = [
+    {
+        id: 0,
+        "text": "Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161",
+        "link": "/caminho"
+    },
+    {
+        id: 1,
+        "text": "(85) 3051-3411",
+        "link": "/caminho"
+    }
+];

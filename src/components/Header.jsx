@@ -1,6 +1,7 @@
 import { useState } from "react";
 import miniCart from "../assets/mini-cart.svg";
 import Logo from "./Logo";
+import logoHeader from '../assets/logo-header.svg';
 import "../styles/Header.css";
 import MenuBar from "./MenuBar";
 import SearchBar from "./SearchBar";
@@ -29,7 +30,7 @@ export default function Header() {
             <span />
           </div>
           <div className="logo-header">
-            <Logo />
+            <Logo logo={logoHeader}/>
           </div>
         </div>
 
