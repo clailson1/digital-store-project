@@ -1,13 +1,21 @@
 import ProductCard from "./ProductCard";
-import { productObject } from "../data/Products"
+import "../styles/ProductListing.css";
 
-const ProductiListing = () => {
+const ProductListing = ({ products }) => {
     return (  
-        <div>
-            <ProductCard products={productObject}/>
-        </div>
-
+        <ul className="product-list-ul">
+            {products.map(product => (
+                <li key={product.id} className="product-list-li">
+                    <ProductCard   
+                        image={product.image}
+                        name={product.name}
+                        price={product.price}
+                        priceDiscount={product.priceDiscount}
+                    />
+                </li>
+            ))}
+        </ul>
     );
 }
- 
-export default ProductiListing;
+
+export default ProductListing;

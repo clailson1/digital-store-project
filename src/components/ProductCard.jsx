@@ -1,25 +1,29 @@
-import "../styles/ProductListing.css"
+import "../styles/ProductCard.css"
 
-const ProductCard = ({ products }) => {
+const ProductCard = ({ image, name, price, priceDiscount }) => {
     
     return (  
-        <div className="product-card-global">
-            {products.map(product => (
-                <div key={product.id} className="product-card">
-                    <img src={product.image} alt="" className="product-image"/>
-                    <h3>{product.name}</h3>
-                    <div>
-                        <div>
-                            {product.priceDiscount}
+        <div className="product-card">
+            <img src={image} alt={name} className="product-image"/>
+            <h3>{name}</h3>
+            {
+                priceDiscount ? (
+                    <div className="product-values">
+                        <div className="product-price" style={{ color: "var(--light-gray)"}}>
+                            <s>$ {price}</s>
                         </div>
-                        <div>
-                            R$ {product.price}
+                        <div className="product-price">
+                            $ {priceDiscount}
                         </div>
+                    </div> 
+                ) : (
+                    <div className="product-values">
+                        <div className="product-price">$ {price}</div>
                     </div>
-                </div>
-            ))}
+                )
+            }                     
         </div>
     );
-}
+};
  
 export default ProductCard;

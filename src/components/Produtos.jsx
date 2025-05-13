@@ -1,10 +1,12 @@
 import Layout from "../pages/Layout";
 import ProductiListing from "./ProductListing";
 
+import{ productObject } from "../data/Products"
+
 const Produtos = () => {
     return (  
         <Layout>
-            <ProductiListing />
+            <ProductiListing products={productObject}/>
         </Layout>
     );
 }

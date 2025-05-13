@@ -10,49 +10,45 @@ export const productObject = [
         id: 1,
         name: "Nome do produto 2",
         image: "../../public/produc-image-2.jpeg",
-        price: 49.9,
-        priceDiscount: 149.9
+        price: 49.9
     },
     {
         id: 3,
         name: "Nome do produto 3",
         image: "../../public/produc-image-3.jpeg",
-        price: 49.9,
-        priceDiscount: 149.9
+        price: 200,
+        priceDiscount: 189.9
     },
     {
         id: 4,
         name: "Nome do produto 4",
         image: "../../public/produc-image-4.jpeg",
-        price: 49.9,
-        priceDiscount: 149.9
+        price: 79.9
     },
     {
         id: 5,
         name: "Nome do produto 5",
         image: "../../public/produc-image-5.jpeg",
-        price: 49.9,
-        priceDiscount: 149.9
+        price: 200,
+        priceDiscount: 179.9
     },
     {
         id: 6,
         name: "Nome do produto 5",
         image: "../../public/product-thumb-1.jpeg",
-        price: 49.9,
-        priceDiscount: 149.9
+        price: 99.9
     },
     {
         id: 7,
         name: "Nome do produto 7",
         image: "../../public/product-thumb-2.jpeg",
-        price: 49.9,
-        priceDiscount: 149.9
+        price: 200,
+        priceDiscount: 169.9
     },
     {
         id: 8,
         name: "Nome do produto 8",
         image: "../../public/product-thumb-3.jpeg",
-        price: 49.9,
-        priceDiscount: 149.9
+        price: 109.9
     }
 ]
