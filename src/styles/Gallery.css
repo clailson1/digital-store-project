@@ -1,0 +1,17 @@
+.slide {
+    background-color: aqua;
+    padding: 10px;
+    position: relative;
+}
+
+.slide-image {
+    display: flex;
+    justify-content: center;
+}
+
+.thumbs {
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+    
+}
