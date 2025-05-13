@@ -6,8 +6,11 @@ import { galleryObj } from "../data/gallery";
 import { useState } from "react";
 import next from "../assets/arrow-right.svg";
 import previous from "../assets/arrow-left.svg";
+import { productObject } from "../data/Products";
 
-const Home = () => {
+import ProductListing from "./ProductListing"
+
+const HomePage = () => {
     const [index, setIndex] = useState(0);
 
     const nextImage = () => {
@@ -48,14 +51,18 @@ const Home = () => {
                 />
             )}
             
-            <Section title={"Texto"} titleAlign={"center"} link={sectionObj}>
-                <h3>Aqui vai o children</h3>
+            <Section title={"Coleções em destaque"} titleAlign={"center"} link={sectionObj}>
+                <div className="flex gap-5">
+                    <img src="collection-1.png" alt="" />
+                    <img src="collection-2.png" alt="" />
+                    <img src="collection-3.png" alt="" />
+                </div>
             </Section>
-            <Section title={"Texto"} link={sectionObj}>
-                <h3>Aqui vai o children</h3>
+            <Section title={"Produtos em alta"} link={sectionObj}>
+                <ProductListing products={productObject} />
             </Section>
         </Layout>
     );
 }
  
-export default Home;
+export default HomePage;
