@@ -1,0 +1,16 @@
+.filter-group > h3{
+    font-size: 14px;
+    color: var(--dark-gray-2);
+}
+
+.filter-group > div > label{
+    font-size: 14px;
+    color: var(--dark-gray-3);
+}
+
+.filter-group > div > input{
+    color: red;
+}
+
+
+
