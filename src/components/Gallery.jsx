@@ -1,6 +1,6 @@
 import "../styles/Gallery.css";
 
-const Gallery = ({ width, height, radius, showThumbs, images }) => {
+const Gallery = ({ width, height, radius, images }) => {
 
     return (  
         <div className="slide">
@@ -16,12 +16,12 @@ const Gallery = ({ width, height, radius, showThumbs, images }) => {
                     );
                 }
             } */}
-            {
+            {/* {
                 showThumbs && 
                 <div className="thumbs">
                     <h3>thumbs</h3>
                 </div>
-            }
+            } */}
         </div>
     );
 }
