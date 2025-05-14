@@ -51,14 +51,14 @@ const HomePage = () => {
                 />
             )}
             
-            <Section title={"Coleções em destaque"} titleAlign={"center"} link={sectionObj}>
+            <Section title={"Coleções em destaque"} titleAlign={"center"} link={""}>
                 <div className="flex gap-5">
                     <img src="collection-1.png" alt="" />
                     <img src="collection-2.png" alt="" />
                     <img src="collection-3.png" alt="" />
                 </div>
             </Section>
-            <Section title={"Produtos em alta"} link={sectionObj}>
+            <Section title={"Produtos em alta"} titleAlign={"left"} link={sectionObj}>
                 <ProductListing products={productObject} />
             </Section>
         </Layout>
