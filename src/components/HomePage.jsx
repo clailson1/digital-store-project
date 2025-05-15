@@ -29,7 +29,13 @@ const HomePage = () => {
 
     return (  
         <Layout>
-            <Gallery images={imgGallery} width={"1440"} height={"681"} radius={"4px"} showThumbs/>
+            <Gallery 
+    images={imgGallery} 
+    width="1440" 
+    height="681" 
+    radius="4px" 
+    showThumbs={true} 
+/>
             
             {/* Mostra a imagem "next" apenas se não estiver no último item */}
             {index < galleryObj.length - 1 && (

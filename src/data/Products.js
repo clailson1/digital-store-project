@@ -34,7 +34,7 @@ export const productObject = [
     },
     {
         id: 6,
-        name: "Nome do produto 5",
+        name: "Nome do produto 6",
         image: "product-thumb-1.jpeg",
         price: 99.9
     },
