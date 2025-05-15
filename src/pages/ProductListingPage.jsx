@@ -3,7 +3,7 @@ import { productObject } from "../data/Products";
 import Layout from "./Layout";
 import "../styles/ProductListingPage.css"
 import Section from "../components/Section";
-import { sectionObj } from "../data/sectionObject";
+// import { sectionObj } from "../data/sectionObject"; 
 import FilterGroup from "../components/FilterGroup";
 import { filterGroupObject } from "../data/filterGroup";
 
@@ -39,13 +39,15 @@ const ProductListingPage = () => {
                     <div className="product-checkbox">
                         <h3>Filtrar por</h3>
                         <hr />
-                        <FilterGroup title={"Marca"} inputType={"checkbox"} options={filterGroupObject} text={"addidas"}/>
+                        <FilterGroup title={"Marca"} inputType={"checkbox"} options={filterGroupObject} />
+                        <FilterGroup title={"Categoria"} inputType={"checkbox"} options={filterGroupObject} />
+                        <FilterGroup title={"Gênero"} inputType={"checkbox"} options={filterGroupObject} />
                         <FilterGroup title={"Estado"} inputType={"radio"} options={filterGroupObject}/>
                     </div>
                 </div>
                 
                 <div className="product-listing">
-                    <Section title={"Produtos em alta"} titleAlign={"left"} link={sectionObj}>
+                    <Section title={`Total de produtos: ${productObject.length}`} titleAlign={"left"} link={""}>
                         <ProductListing products={productObject}/>
                     </Section>
                 </div>
