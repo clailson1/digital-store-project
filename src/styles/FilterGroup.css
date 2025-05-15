@@ -1,16 +1,71 @@
-.filter-group > h3{
+.filter-group > h3 {
     font-size: 14px;
     color: var(--dark-gray-2);
 }
 
-.filter-group > div > label{
+.filter-group > div > label {
     font-size: 14px;
     color: var(--dark-gray-3);
 }
 
-.filter-group > div > input{
+.filter-group > div > label {
+    font-size: 14px;
     color: red;
 }
 
+/* Estilo base para ambos checkbox e radio */
+.custom-checkbox {
+    -webkit-appearance: none;  /* Remove a aparência padrão do browser */
+    appearance: none;
+    width: 22px; /* Defina o tamanho desejado */
+    height: 22px; /* Defina o tamanho desejado */
+    background-color: var(--white); /* Defina a cor de fundo inicial */
+    border: 1px solid var(--dark-gray-2); /* Defina a cor da borda */
+    display: inline-block;
+    position: relative;
+    margin-right: 8px; /* Espaçamento entre o input e o label */
+    vertical-align: middle; /* Alinha verticalmente com o label */
+}
 
+/* Estilo específico para checkbox */
+.custom-checkbox[type="checkbox"] {
+    border-radius: 2px; /* Bordas retas para checkbox */
+}
 
+.custom-checkbox[type="checkbox"]:checked {
+    background-color: var(--primary); /* Cor de fundo quando marcado */
+    border-color: var(--primary); /* Cor da borda quando marcado */
+}
+
+.custom-checkbox[type="checkbox"]:checked::after {
+    content: "\2713"; /* Ícone de check (v) */
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px; /* Defina o tamanho do ícone */
+    color: white; /* Cor do ícone */
+}
+
+/* Estilo específico para radio */
+.custom-checkbox[type="radio"] {
+    border-radius: 50%; /* Bordas arredondadas para radio */
+}
+
+.custom-checkbox[type="radio"]:checked {
+    border-color: var(--primary);
+}
+
+.custom-checkbox[type="radio"]:checked::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px; /* Tamanho do ponto central */
+    height: 12px; /* Tamanho do ponto central */
+    border-radius: 50%; /* Forma circular */
+    background-color: var(--primary); /* Cor do ponto central */
+}
