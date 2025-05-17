@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     background-color: bisque;
+    padding: 50px;
 }
 
 .product-listing {
@@ -19,8 +20,16 @@
     font-size: 16px;
     color: var(--dark-gray-2);
     background-color: blueviolet;
+    padding: 0 0 5px 0;
+}
+
+.select-dropbox {
     width: 308px;
     height: 60px;
+}
+
+.label-dropbox {
+    margin: 5px 0 5px 0;
 }
 
 .product-checkbox {

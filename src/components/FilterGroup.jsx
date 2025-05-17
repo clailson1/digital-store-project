@@ -10,11 +10,11 @@ const FilterGroup = ({ title, inputType, options }) => {
                         <input
                             className="custom-checkbox"
                             type={inputType}
-                            id={`option-${option.id}`}
+                            id={option.id}
                             name={title.toLowerCase()}
-                            {...(option.value ? { value: option.value } : {})} // Só inclui o atributo `value` se existir
+                            value={option.value} 
                         />
-                        <label htmlFor={`option-${option.id}`}>
+                        <label htmlFor={option.id}>
                             {option.text}
                         </label>
                     </div>
