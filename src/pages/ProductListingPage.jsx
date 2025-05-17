@@ -5,20 +5,9 @@ import "../styles/ProductListingPage.css"
 import Section from "../components/Section";
 // import { sectionObj } from "../data/sectionObject"; 
 import FilterGroup from "../components/FilterGroup";
-import { filterGroupObject } from "../data/filterGroup";
-
-
-import { Dropdown } from 'primereact/dropdown';
-import { useState } from "react";
-        
+import { filterGroupObject } from "../data/filterGroup";     
 
 const ProductListingPage = () => {
-
-    const [productPrice, setproductPrice] = useState(null);
-    const prods = [
-        { name: 'Menor preço'},
-        { name: 'Maior preço' }
-    ];
 
     return (  
         <Layout>
@@ -26,11 +15,13 @@ const ProductListingPage = () => {
                 <div className="product-filtering">
                     <div className="ordenar-por">
                         {/* Ordenar por */}
-                        <div className="card flex justify-content-center">
-                        <Dropdown value={productPrice} onChange={(e) => setproductPrice(e.value)} options={prods} optionLabel="name" 
-                            placeholder="Ordenar por" className="w-full md:w-14rem" />
+                        <div className="label-dropbox">
+                            <label for="cars">Ordenar por</label>
                         </div>
-            
+                        <select className="select-dropbox" id="cars" name="cars">
+                            <option value="menor">Menor Preço</option>
+                            <option value="maior">Maior Preço</option>
+                        </select>
                     </div>
                     {/* <div className="flex border-1 p-3">
                         Preço: mais barato
@@ -39,10 +30,9 @@ const ProductListingPage = () => {
                     <div className="product-checkbox">
                         <h3>Filtrar por</h3>
                         <hr />
-                        <FilterGroup title={"Marca"} inputType={"checkbox"} options={filterGroupObject} />
-                        <FilterGroup title={"Categoria"} inputType={"checkbox"} options={filterGroupObject} />
-                        <FilterGroup title={"Gênero"} inputType={"checkbox"} options={filterGroupObject} />
-                        <FilterGroup title={"Estado"} inputType={"radio"} options={filterGroupObject}/>
+                        <FilterGroup title={"Title 1"} inputType={"checkbox"} options={filterGroupObject} />
+                        <FilterGroup title={"Title 2"} inputType={"checkbox"} options={filterGroupObject} />
+                        <FilterGroup title={"Title 3"} inputType={"checkbox"} options={filterGroupObject} />
                     </div>
                 </div>
                 

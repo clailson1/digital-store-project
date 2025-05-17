@@ -1,6 +1,6 @@
 import Layout from "../pages/Layout";
 import Section from "./Section";
-import { sectionObj } from "../data/sectionObject";
+// import { sectionObj } from "../data/sectionObject";
 import Gallery from "./Gallery";
 import { galleryObj } from "../data/gallery";
 import { useState } from "react";
@@ -52,13 +52,13 @@ const HomePage = () => {
             )}
             
             <Section title={"Coleções em destaque"} titleAlign={"center"} link={""}>
-                <div className="flex gap-5">
+                <div className="flex gap-5 flex-wrap">
                     <img src="collection-1.png" alt="" />
                     <img src="collection-2.png" alt="" />
                     <img src="collection-3.png" alt="" />
                 </div>
             </Section>
-            <Section title={"Produtos em alta"} titleAlign={"left"} link={sectionObj}>
+            <Section title={"Produtos em alta"} titleAlign={"left"} link={""}>
                 <ProductListing products={productObject} />
             </Section>
         </Layout>
