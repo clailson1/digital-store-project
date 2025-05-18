@@ -2,9 +2,6 @@
     background-color: aqua;
     padding: 10px;
     position: relative;
-}
-
-.slide-image {
     display: flex;
     justify-content: center;
 }
@@ -13,5 +10,4 @@
     display: flex;
     justify-content: center;
     background-color: bisque;
-    
 }
