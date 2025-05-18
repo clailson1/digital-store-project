@@ -1,0 +1,52 @@
+.buybox-component {
+    background-color: burlywood;
+    width: 100%;
+}
+
+.star {
+    display: flex;
+    gap: 10px;
+    background-color: var(--warning);
+    width: 80px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: var(--dark-gray-2);
+    border-radius: 4px;
+}
+
+.star-rating {
+    display: flex;
+    gap: 20px;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.price-discount {
+    display: flex;
+    background-color: brown;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.price-product-view {
+    color: var(--dark-gray-2);
+    font-size: 32px;
+}
+
+.discount-product-view {
+    color: var(--dark-gray-2);
+    font-size: 32px;
+}
+
+button {
+    background-color: var(--warning);
+    border: none;
+    height: 40px;
+    width: 150px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: var(--white);
+}
+    

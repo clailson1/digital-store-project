@@ -23,33 +23,38 @@ export default function Gallery ({width, height, radius, images}) {
     let image = images[variavel];
     
     return (
-        <div className="slide">
-            <div style={{width: width + "px", height: height + "px"}}>
-                <img 
-                    src={image.src} 
-                    alt={"Imagem Galeria"}
-                    style={{borderRadius: radius}}
-                />
-                
-                {variavel < (images.length - 1) &&
-                    <div onClick={handleClickRight} >
-                        <img 
-                            className="absolute top-50 right-0 mr-8 cursor-pointer" 
-                            src={arrowRight} 
-                            alt="Seta Direita"
-                        />
-                    </div>
-                }
+        <div className="">
+            <div className="slide">
+                <div style={{width: width + "px", height: height + "px"}}>
+                    <img 
+                        src={image.src} 
+                        alt={"Imagem Galeria"}
+                        style={{borderRadius: radius}}
+                    />
+                    
+                    {variavel < (images.length - 1) &&
+                        <div onClick={handleClickRight} >
+                            <img 
+                                className="absolute top-50 right-0 mr-8 cursor-pointer" 
+                                src={arrowRight} 
+                                alt="Seta Direita"
+                            />
+                        </div>
+                    }
 
-                {variavel > 0 &&
-                    <div onClick={handleClickLeft}>
-                        <img 
-                            className="absolute top-50 left-0 ml-8 cursor-pointer"
-                            src={arrowLeft} 
-                            alt="Seta Esquerda"
-                        />
-                    </div>
-                }
+                    {variavel > 0 &&
+                        <div onClick={handleClickLeft}>
+                            <img 
+                                className="absolute top-50 left-0 ml-8 cursor-pointer"
+                                src={arrowLeft} 
+                                alt="Seta Esquerda"
+                            />
+                        </div>
+                    }
+                </div>
+            </div>
+            <div>
+
             </div>
         </div>
     );

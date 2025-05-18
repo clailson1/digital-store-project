@@ -18,18 +18,6 @@ export const galleryProductObj = [
     { 
         id: 4,
         "src": "/produc-image-5.jpeg" 
-    },
-    { 
-        id: 5,
-        "src": "/product-thumb-1.jpeg" 
-    },
-    { 
-        id: 6,
-        "src": "/product-thumb-2.jpeg" 
-    },
-    { 
-        id: 7,
-        "src": "/product-thumb-3.jpeg" 
     }
 ]
     
