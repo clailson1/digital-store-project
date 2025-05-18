@@ -4,12 +4,12 @@ import starIcon from '../assets/star-icon.svg';
 const BuyBox = ({ name, reference, stars, rating, price, priceDiscount, description, children }) => {
     return (  
         <div className="buybox-component">
-            <h3>{ name }</h3>
-            <p>{ reference }</p>
+            <h3 className="product-name">{ name }</h3>
+            <p className="product-reference">{ reference }</p>
             <div className="star-rating">
                 <div className="star">
                     <h4>{ stars } </h4>
-                    <div>
+                    <div className="star-icon">
                         <img src={ starIcon } alt="" />
                     </div>
                 </div>
@@ -31,7 +31,7 @@ const BuyBox = ({ name, reference, stars, rating, price, priceDiscount, descript
                         </div>
                     )
                 }
-            <p>{ description }</p>
+            <p className="product-description">{ description }</p>
             <div className="children-section">
                 { children } 
             </div>
