@@ -1,6 +1,21 @@
+.product-name {
+    font-size: 32px;
+    color: var(--dark-gray);
+    width: 50%;
+    margin: 10px 0 10px 0;
+}
+
+.product-reference {
+    font-size: 12px;
+    color: var(--dark-gray-3);
+    margin: 0;
+}
+
 .buybox-component {
-    background-color: burlywood;
-    width: 100%;
+    /* background-color: burlywood; */
+    background-color: var(--light-gray-3);
+    width: 900px;
+    padding: 0 50px 0 50px;
 }
 
 .star {
@@ -23,11 +38,22 @@
     align-items: center;
 }
 
+.star-rating > h4 {
+    color: var(--light-gray);
+    font-size: 14px;
+}
+
 .price-discount {
     display: flex;
-    background-color: brown;
+    /* background-color: brown; */
     align-items: baseline;
     gap: 20px;
+}
+
+.product-description {
+    color: var(--dark-gray-2);
+    font-size: 14px;
+    width: 50%;
 }
 
 .price-product-view {
@@ -40,7 +66,13 @@
     font-size: 32px;
 }
 
+.children-section {
+    display: flex;
+    justify-content: left;
+}
+
 button {
+    margin: 10px 0 0 0;
     background-color: var(--warning);
     border: none;
     height: 40px;
