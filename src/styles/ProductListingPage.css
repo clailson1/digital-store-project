@@ -1,31 +1,31 @@
 .product-page {
     display: flex;
     justify-content: center;
-    background-color: bisque;
-    padding: 50px;
+    background-color: var(--light-gray-3);
+    /* background-color: #F9F8FE; */
+    padding: 0 200px 0 200px;
 }
 
 .product-listing {
-    background-color: rgb(211, 106, 106);
     width: 1500px;
 }
 
 .product-filtering {
     display: flex;
     flex-flow: column nowrap;
-    background-color: cadetblue;
 }
 
 .ordenar-por {
     font-size: 16px;
     color: var(--dark-gray-2);
-    background-color: blueviolet;
-    padding: 0 0 5px 0;
+    padding: 40px 0 20px 0;
 }
 
 .select-dropbox {
     width: 308px;
     height: 60px;
+    border-radius: 8px;
+    background-color: var(--white);
 }
 
 .label-dropbox {
@@ -36,7 +36,9 @@
     display: flex;
     flex-flow: column nowrap;
     background-color: var(--white);
+    padding: 10px 20px 20px 20px;
     width: 308px;
+    border-radius: 8px;
 }
 
 .product-checkbox > h3 {

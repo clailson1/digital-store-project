@@ -1,12 +1,13 @@
-import Layout from "../pages/Layout";
-import Section from "./Section";
+import Layout from "./Layout";
+import Section from "../components/Section";
+import "../styles/Homepage.css"
 import { sectionObj } from "../data/sectionObject";
 
-import Gallery from "./Gallery";
+import Gallery from "../components/Gallery";
 import { galleryObj } from "../data/gallery";
-import { productObject } from "../data/Products";
+import { productObject } from "../data/productObject";
 
-import ProductListing from "./ProductListing"
+import ProductListing from "../components/ProductListing"
 
 const HomePage = () => {
 
@@ -20,15 +21,17 @@ const HomePage = () => {
             />
             
             <Section title={"Coleções em destaque"} titleAlign={"center"} link={""}>
-                <div className="flex gap-5">
+                <div className="featured-collections">
                     <img src="collection-1.png" alt="" />
                     <img src="collection-2.png" alt="" />
                     <img src="collection-3.png" alt="" />
                 </div>
             </Section>
-            <Section title={"Produtos em alta"} titleAlign={"left"} link={sectionObj}>
-                <ProductListing products={productObject} />
-            </Section>
+            <div className="trending-products">
+                <Section title={"Produtos em alta"} titleAlign={"left"} link={sectionObj}>
+                    <ProductListing products={productObject} />
+                </Section>
+            </div>
         </Layout>
     );
 }
