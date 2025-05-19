@@ -1,9 +1,8 @@
 import ProductListing from "../components/ProductListing";
-import { productObject } from "../data/Products";
+import { productObject } from "../data/productObject";
 import Layout from "./Layout";
 import "../styles/ProductListingPage.css"
 import Section from "../components/Section";
-// import { sectionObj } from "../data/sectionObject"; 
 import FilterGroup from "../components/FilterGroup";
 import { filterGroupObject } from "../data/filterGroup";     
 

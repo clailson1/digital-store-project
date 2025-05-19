@@ -1,25 +1,24 @@
 .product-card {
     display: inline-block; /* Faz o card ter a largura do conteúdo */
-    width: auto; /* Ou use 'fit-content' */
+    width: auto; 
     max-width: 100%; /* Evita estourar a tela em mobile */
-    border: 1px solid #ddd; /* Opcional: borda para visualização */
-    border-radius: 8px; /* Opcional: cantos arredondados */
+    /* border: 1px solid #ddd; 
+    border-radius: 8px;  */
     overflow: hidden; /* Garante que a imagem respeite o border-radius */
-    text-align: center; /* Centraliza o conteúdo */
-    background-color: bisque;
+    /* background-color: bisque; */
 }
 
 .product-image {
     width: 321px;
     height: 292px;
-    border-radius: 8px; /* Cantos arredondados */
-    display: block; /* Garante que a imagem se comporte como um bloco */
-    margin: 0 auto; /* Centraliza horizontalmente */
+    border-radius: 8px; 
+    display: block; 
+    margin: 0 auto; 
     object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
 }
 
 .product-values {
-    background-color: brown;
+    /* background-color: brown; */
     display: flex;
     gap: 1rem;
 }

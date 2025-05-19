@@ -1,0 +1,15 @@
+.featured-collections {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.featured-collections > img {
+    border-radius: 4px;
+}
+
+.trending-products {
+    background-color: var(--light-gray-3);
+    padding: 0 200px 0 200px;
+}

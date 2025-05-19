@@ -4,15 +4,7 @@
     padding: 0; /* Remove padding padrão do <ul> */
     margin: 0; /* Remove margem padrão do <ul> */
     list-style: none; /* Remove marcadores de lista */
+    gap: 40px;
     justify-content: center;
-    background-color: aqua;
-}
-
-.product-list-li {
-    display: flex; /* 4 colunas (25% cada) com ajuste para o gap */
-    padding: 0 30px 60px 30px;
-    box-sizing: border-box; /* Garante que padding não estoure a largura */
-    background-color: blueviolet;
-    display: flex;
-    justify-content: center;
+    /* background-color: aqua; */
 }

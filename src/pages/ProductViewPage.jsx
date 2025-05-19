@@ -9,6 +9,7 @@ import Section from "../components/Section";
 import { linkProdRecommendedObj } from "../data/linkProdRecommended";
 import { prodRecommendedListObj } from "../data/prodRecommendedList";
 import ProductListing from "../components/ProductListing";
+import "../styles/ProductViewPage.css"
 
 const ProductViewPage = () => {
 
@@ -47,7 +48,7 @@ const ProductViewPage = () => {
                     </div>
                 </BuyBox>
             </div>
-            <div>
+            <div className="prod-recomendado">
                 <Section title={"Produtos recomendados"} titleAlign={"left"} link={linkProdRecommendedObj}>
                     <ProductListing products={prodRecommendedListObj} />
                 </Section>
