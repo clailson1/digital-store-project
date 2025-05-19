@@ -8,6 +8,10 @@
     /* background-color: bisque; */
 }
 
+.product-card {
+    color: var(--dark-gray-3);
+}
+
 .product-image {
     width: 321px;
     height: 292px;
