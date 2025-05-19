@@ -10,36 +10,36 @@ import { title1, object1, title2, object2, title3, object3 } from "../data/dataI
 
 const Footer = () => {
 	return (
-		<>
-			<footer>
-				<div className="footer-info">
-					<div>
-						<div><Logo logo={logoFooter}/></div>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia similique et quo, laudantium in, distinctio deserunt blanditiis assumenda, error sunt impedit corporis incidunt. Incidunt et itaque, saepe nam dolor libero.
-						</p>
-						<div className="social-icons">
-							<img src={facebook} alt="facebook" />
-							<img src={instagram} alt="instagram" />
-							<img src={twitter} alt="twitter" />
-						</div>
-					</div>
-					<div>
-						<Information title={title1} informations={object1}/>
-					</div>
-					<div>
-						<Information title={title2} informations={object2}/>
-					</div>
-					<div>
-						<Information title={title3} informations={object3}/>
+		<footer>
+			<div className="footer-info">
+				<div>
+					<div><Logo logo={logoFooter}/></div>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia similique et quo, laudantium in, distinctio deserunt blanditiis assumenda, error sunt impedit corporis incidunt. Incidunt et itaque, saepe nam dolor libero.
+					</p>
+					<div className="social-icons">
+						<img src={facebook} alt="facebook" />
+						<img src={instagram} alt="instagram" />
+						<img src={twitter} alt="twitter" />
 					</div>
 				</div>
-				<hr />
-					<p className="copyright">
-						© 2024 Digital Store
-					</p>
-			</footer>
-		</>
+				<div>
+					<Information title={title1} informations={object1}/>
+				</div>
+				<div>
+					<Information title={title2} informations={object2}/>
+				</div>
+				<div>
+					<Information title={title3} informations={object3}/>
+				</div>
+			</div>
+			<hr />
+			<div>
+				<p className="copyright">
+					© 2024 Digital Store
+				</p>
+			</div>
+		</footer>
 	);
 };
 

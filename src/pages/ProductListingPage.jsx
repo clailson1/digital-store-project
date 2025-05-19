@@ -15,12 +15,14 @@ const ProductListingPage = () => {
                     <div className="ordenar-por">
                         {/* Ordenar por */}
                         <div className="label-dropbox">
-                            <label htmlFor="cars">Ordenar por</label>
+                            <label htmlFor="order-product">Ordenar por</label>
                         </div>
-                        <select className="select-dropbox" id="cars" name="cars">
-                            <option value="menor">Menor Preço</option>
-                            <option value="maior">Maior Preço</option>
-                        </select>
+                        <div className="select-dropbox">
+                            <select id="dropbox" name="dropbox">
+                                <option value="menor">Menor Preço</option>
+                                <option value="maior">Maior Preço</option>
+                            </select>
+                        </div>
                     </div>
                     {/* <div className="flex border-1 p-3">
                         Preço: mais barato
@@ -31,7 +33,7 @@ const ProductListingPage = () => {
                         <hr />
                         <FilterGroup title={"Title 1"} inputType={"checkbox"} options={filterGroupObject} />
                         <FilterGroup title={"Title 2"} inputType={"checkbox"} options={filterGroupObject} />
-                        <FilterGroup title={"Title 3"} inputType={"checkbox"} options={filterGroupObject} />
+                        <FilterGroup title={"Title 3"} inputType={"radio"} options={filterGroupObject} />
                     </div>
                 </div>
                 

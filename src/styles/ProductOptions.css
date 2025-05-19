@@ -11,16 +11,11 @@
     padding: 10px 0 10px 0;
 }
 
-.sizes2 {
-    /* background-color: rgb(73, 114, 150); */
-    /* padding: 10px; */
-}
-
 .sizes3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: aliceblue;
+    background-color: var(--white);
     width:46px;
     height: 46px;
     border: solid;

@@ -15,7 +15,7 @@ const ProductViewPage = () => {
 
     return (  
         <Layout>
-            <div className="flex justify-content-center p-4" style={{ backgroundColor: "var(--light-gray-3)"}}>
+            <div className="prod-view-page">
                 <Gallery images={galleryProductObj} 
                     width={ "700px" }
                     height={ "570px" } 

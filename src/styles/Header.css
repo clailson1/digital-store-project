@@ -8,6 +8,7 @@
     width: 100%;
     box-sizing: border-box;
     background-color: var(--white);
+    padding: 20px 100px 0 100px;
 }
 
 .top-bar {
@@ -225,7 +226,7 @@
 .menu-bar-desktop {
     display: block;
     width: 100%;
-    padding: 0 100px;
+    padding: 0 40px;
     box-sizing: border-box;
 }
 
