@@ -5,6 +5,10 @@ import { galleryProductObj } from "../data/galleryProduct";
 import { prodOptColor } from "../data/prodOptColor";
 import { prodOptSize } from "../data/prodOptSize";
 import Layout from "./Layout";
+import Section from "../components/Section";
+import { linkProdRecommendedObj } from "../data/linkProdRecommended";
+import { prodRecommendedListObj } from "../data/prodRecommendedList";
+import ProductListing from "../components/ProductListing";
 
 const ProductViewPage = () => {
 
@@ -42,6 +46,11 @@ const ProductViewPage = () => {
                         />
                     </div>
                 </BuyBox>
+            </div>
+            <div>
+                <Section title={"Produtos recomendados"} titleAlign={"left"} link={linkProdRecommendedObj}>
+                    <ProductListing products={prodRecommendedListObj} />
+                </Section>
             </div>
         </Layout>
     );

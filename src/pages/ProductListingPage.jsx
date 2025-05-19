@@ -16,7 +16,7 @@ const ProductListingPage = () => {
                     <div className="ordenar-por">
                         {/* Ordenar por */}
                         <div className="label-dropbox">
-                            <label for="cars">Ordenar por</label>
+                            <label htmlFor="cars">Ordenar por</label>
                         </div>
                         <select className="select-dropbox" id="cars" name="cars">
                             <option value="menor">Menor Preço</option>
