@@ -6,7 +6,12 @@ const ProductListing = ({ products }) => {
     return (  
         <ul className="product-list-ul">
             {products.map(product => (
-                <Link to={`/product/${product.id}`} className="product-link" style={{ display: "block" }}>
+                <Link 
+                    key={product.id}
+                    to={`/product/${product.id}`} 
+                    className="product-link" 
+                    style={{ display: "block" }}
+                >
                     <ProductCard
                         image={product.image}
                         name={product.name}
