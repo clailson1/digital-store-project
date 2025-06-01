@@ -35,7 +35,7 @@ const BuyBox = ({ name, reference, stars, rating, price, priceDiscount, descript
             <div className="children-section">
                 { children } 
             </div>
-            <button>Comprar</button>
+            <button className="buy-button">Comprar</button>
         </div>
     );
 }

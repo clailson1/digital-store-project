@@ -71,7 +71,7 @@
     justify-content: left;
 }
 
-button {
+.buy-button {
     margin: 10px 0 0 0;
     background-color: var(--warning);
     border: none;

@@ -4,7 +4,7 @@ import arrowRight from "../assets/arrow-right.svg";
 import arrowLeft from "../assets/arrow-left.svg";
 import { useState } from "react";
 
-export default function Gallery ({width, height, radius, images}) {
+export default function Gallery ({width, height, radius, images, showThumbs}) {
     
     const [variavel, setVariavel] = useState(0);
     
@@ -16,9 +16,18 @@ export default function Gallery ({width, height, radius, images}) {
         setVariavel(variavel - 1);
     }
 
-    // function handleClickThumb(id) {
-    //     setVariavel(id);
-    // }
+    const miniatura = images.map(thumbnail =>
+    <li key={thumbnail.id}>
+        <div >
+            <img        
+                className="img-thumbnail"
+                src={thumbnail.src} alt={`home-slide-${thumbnail.id + 1}`}
+                style={{width:"117px", height: "95px",
+                borderRadius: radius}}
+                onClick={() => setVariavel(() => thumbnail.id)}/>
+        </div>
+    </li>
+    );
 
     let image = images[variavel];
     
@@ -54,7 +63,12 @@ export default function Gallery ({width, height, radius, images}) {
                 </div>
             </div>
             <div>
-
+                {/* no return */}
+                {showThumbs &&
+                    <div className="miniatura">
+                        <ul>{miniatura}</ul>
+                    </div>
+                }
             </div>
         </div>
     );
