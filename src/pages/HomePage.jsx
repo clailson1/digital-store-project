@@ -18,6 +18,7 @@ const HomePage = () => {
                 width="1440" 
                 height="681" 
                 radius="4px" 
+                showThumbs
             />
             
             <Section title={"Coleções em destaque"} titleAlign={"center"} link={""}>

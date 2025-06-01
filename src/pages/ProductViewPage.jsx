@@ -20,6 +20,7 @@ const ProductViewPage = () => {
                     width={ "700px" }
                     height={ "570px" } 
                     radius={ "4px" } 
+                    showThumbs
                 />
                 <BuyBox 
                     name={ "Tênis Nike Revolution 6 Next Nature Masculino" }
@@ -31,18 +32,16 @@ const ProductViewPage = () => {
                     description={ "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doelusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco." }
                 >
                     <div className="product-options">
-                        <p>Tamanho</p>
                         <ProductOptions 
-                            options={prodOptSize} 
+                            options={ prodOptSize } 
                             radius={ "4px" }
-                            shape={"square"}
+                            shape={ "square" }
                             type={ "text" }
                         />
-                        <p>Tamanho</p>
                         <ProductOptions 
-                            options={prodOptColor} 
+                            options={ prodOptColor } 
                             radius={ "" }
-                            shape={"circle"}
+                            shape={ "circle" }
                             type={ "color" }
                         />
                     </div>
