@@ -1,12 +1,52 @@
-# React + Vite
+# Projeto Front End - Geração Tech
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto Final do Front End, usando o **Vite + React**.
 
-Currently, two official plugins are available:
+- Projeto criado com o [Vite](https://vite.dev/) com o comando `npm create vite`, Usando o Framework [React](https://pt-br.legacy.reactjs.org/), e usando o JavaScript.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Rodar o projeto localmente
+    1. Execute o comando `npm install` para baixar as dependências do projeto.
+    2. Execute o comando `npm run dev` para rodar o projeto no endereço `http://localhost:5173/`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Pacotes usados no projeto
+    1. **primeflex**, versão *4.0.0*.
+    2. **primeicons**, versão *7.0.0*.
+    3. **primereact**, versão *10.9.5*.
+    4. **react**, versão *19.0.0*.
+    5. **react-dom**, versão *19.0.0*.
+    6. **react-router-dom**, versão *7.5.3*.
+    7. **styled-components**, versão *6.1.17*.
+
+---
+
+## Página inicial: `http://localhost:5173/`
+
+- Barra de pesquisa para buscar produtos
+- Menu que redireciona para a página Home ou Produtos .
+- Galeria de imagens que podem ser mudadas ao clicar nas setas.
+- Miniaturas das imagens que ao serem clicadas alteram a imagem relacionada na miniatura para a galeria.
+- Lista com alguns produtos em destaque.
+- Rodapé com as informações adicionais do site.
+
+---
+
+## Página de produtos: `http://localhost:5173/produtos`
+
+- Lista de produtos.
+- Filtragem de produtos.
+
+---
+
+## Página do produto: `http://localhost:5173/product/0`
+
+- Galeria de imagens do produto selecionado
+- Informações detalhadas sobre o produto.
+- Produtos recomendados.
+
+---
+
+## Autor
+
+GitHub:[clailson1](https://github.com/clailson1)
