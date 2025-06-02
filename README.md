@@ -5,8 +5,8 @@ Projeto Final do Front End, usando o **Vite + React**.
 - Projeto criado com o [Vite](https://vite.dev/) com o comando `npm create vite`, Usando o Framework [React](https://pt-br.legacy.reactjs.org/), e usando o JavaScript.
 
 ## Rodar o projeto localmente
-    1. Execute o comando `npm install` para baixar as dependências do projeto.
-    2. Execute o comando `npm run dev` para rodar o projeto no endereço `http://localhost:5173/`.
+- Execute o comando `npm install` para baixar as dependências do projeto.
+- Execute o comando `npm run dev` para rodar o projeto no endereço `http://localhost:5173/`.
 
 - Pacotes usados no projeto
     1. **primeflex**, versão *4.0.0*.
