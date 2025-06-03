@@ -39,4 +39,10 @@ Projeto Final do Front End, usando o **Vite + React**.
 
 ## Autor
 
-GitHub:[clailson1](https://github.com/clailson1)
+Aluno do Geração Tech Clailson
+GitHub: [clailson1](https://github.com/clailson1)
+
+## Colaborador
+
+Aluno do Geração Tech Clausson do curso Desenvolvedor Web Full Stack - Online - 2.0
+GitHub: [claussonlucas](https://github.com/claussonlucas)
