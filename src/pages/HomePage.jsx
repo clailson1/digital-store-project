@@ -1,20 +1,46 @@
 import Layout from "./Layout";
 import Section from "../components/Section";
 import "../styles/Homepage.css"
-import { sectionObj } from "../data/sectionObject";
-
 import Gallery from "../components/Gallery";
-import { galleryObj } from "../data/gallery";
-import { productObject } from "../data/productObject";
-
 import ProductListing from "../components/ProductListing"
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const HomePage = () => {
+
+    const [galleryData, setGalleryData] = useState([]);
+    const [productData, setProductsData] = useState([]);
+    const [sectionData, setSectionData] = useState([]);
+
+    async function gallerySlide() {
+        const response = await axios.get('../src/data/galleryData.json');
+        console.log("gallerySlide response", response.data.data);
+        setGalleryData(response.data.data);
+
+    }
+
+    async function products() {
+        const response = await axios.get('../src/data/productData.json');
+        console.log("products response", response.data.data);
+        setProductsData(response.data.data);
+    }
+
+    async function sectionObject() {
+        const response = await axios.get('../src/data/sectionObject.json');
+        console.log("sectionObject response", response.data);
+        setSectionData(response.data);
+    }
+
+    useEffect(() => {
+        gallerySlide();
+        products();
+        sectionObject();
+    }, []);
 
     return (  
         <Layout>
             <Gallery
-                images={galleryObj} 
+                images={galleryData} 
                 width="1440" 
                 height="681" 
                 radius="4px" 
@@ -29,8 +55,8 @@ const HomePage = () => {
                 </div>
             </Section>
             <div className="trending-products">
-                <Section title={"Produtos em alta"} titleAlign={"left"} link={sectionObj}>
-                    <ProductListing products={productObject} />
+                <Section title={"Produtos em alta"} titleAlign={"left"} link={sectionData}>
+                    <ProductListing products={productData} />
                 </Section>
             </div>
         </Layout>
