@@ -46,8 +46,3 @@ Aluno do Geração Tech Clailson
 
 Aluno do Geração Tech Clausson do curso Desenvolvedor Web Full Stack - Online - 2.0
 - GitHub: [claussonlucas](https://github.com/claussonlucas)
-
-## Colaborador
-
-Aluno do Geração Tech Clausson do curso Desenvolvedor Web Full Stack - Online - 2.0
-GitHub: [claussonlucas](https://github.com/claussonlucas)
