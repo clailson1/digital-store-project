@@ -31,7 +31,9 @@ export default function Header() {
             <span />
           </div>
           <div className="logo-header">
-            <Logo logo={logoHeader}/>
+            <Link to="/" >
+              <Logo logo={logoHeader}/>
+            </Link>
           </div>
         </div>
 
@@ -52,9 +54,9 @@ export default function Header() {
 
           <div className="desktop-auth">
             <Link to="/register" className="register-link">Cadastre-se</Link>
-            <div className="login-button">
-              <Link to="/login" className="login-link">Entrar</Link>
-            </div>
+            <Link to="/login" className="login-button">
+              <span className="login-link">Entrar</span>
+            </Link>
             <img src={miniCart} alt="Carrinho" className="cart-icon" />
           </div>
         </div>
@@ -72,9 +74,9 @@ export default function Header() {
           <div className="menu-divider"></div>
           <div className="mobile-auth">
             <Link to="/register" className="register-link">Cadastre-se</Link>
-            <div className="login-button">
-              <Link to="/login" className="login-link">Entrar</Link>
-            </div>
+            <Link to="/login">
+              <span className="login-link">Entrar</span>
+            </Link>
           </div>
         </div>
       </div>

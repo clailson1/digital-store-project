@@ -2,7 +2,7 @@
     font-size: 32px;
     color: var(--dark-gray);
     width: 50%;
-    margin: 10px 0 10px 0;
+    margin: 0 0 10px 0;
 }
 
 .product-reference {
@@ -29,6 +29,17 @@
     font-size: 14px;
     color: var(--dark-gray-2);
     border-radius: 4px;
+}
+
+.star > h4 {
+    display: flex;
+    padding-top: 6px;
+    /* color: aqua; */
+}
+
+.star-icon {
+    display: flex;
+    align-self: center;
 }
 
 .star-rating {
