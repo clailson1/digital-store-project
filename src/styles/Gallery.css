@@ -6,11 +6,11 @@
     justify-content: center;
 }
 
-.thumbs {
+/* .thumbs {
     display: flex;
     justify-content: center;
     background-color: bisque;
-}
+} */
 
 .miniatura {
     padding: 40px 0 10px 0;
@@ -23,13 +23,24 @@
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    gap: 72px;
+    gap: 20px;
 }
 
-.img-thumbnail:active {
-    border: 2px solid var(--primary);
+.selected-thumbnail {
+    border: 2px solid var(--primary) !important;
     cursor: pointer;
 }
+
+.img-thumbnail {
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    width: 117px;
+    height: 95px;
+    object-fit: cover;
+    outline: none; /* Remove contornos focados */
+    padding: 0; /* Remove padding interno se houver */
+    margin: 0; /* Remove margens se houver */
+    display: block; /* Remove espaços abaixo da imagem */}
 
 .img-thumbnail:hover {
     border: 2px solid var(--primary);

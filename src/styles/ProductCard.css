@@ -12,6 +12,10 @@
     color: var(--dark-gray-3);
 }
 
+.product-card > h3 {
+    padding: 15px 0 0 0;
+}
+
 .product-image {
     width: 321px;
     height: 292px;
@@ -30,7 +34,6 @@
 .product-price {
     color: var(--dark-gray);
     font-size: 24px;
-    
 }
 
 .product-priceDiscount {
