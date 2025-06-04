@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom"; // Importe o componente Link
 import miniCart from "../assets/mini-cart.svg";
 import Logo from "./Logo";
 import logoHeader from '../assets/logo-header.svg';
@@ -12,12 +13,12 @@ export default function Header() {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    if (searchOpen) setSearchOpen(false); // Fecha a busca se estiver aberta
+    if (searchOpen) setSearchOpen(false);
   };
 
   const toggleSearch = () => {
     setSearchOpen(!searchOpen);
-    if (menuOpen) setMenuOpen(false); // Fecha o menu se estiver aberto
+    if (menuOpen) setMenuOpen(false);
   };
 
   return (
@@ -50,9 +51,9 @@ export default function Header() {
           </div>
 
           <div className="desktop-auth">
-            <a href="#" className="register-link">Cadastre-se</a>
+            <Link to="/register" className="register-link">Cadastre-se</Link>
             <div className="login-button">
-              <a href="#" className="login-link">Entrar</a>
+              <Link to="/login" className="login-link">Entrar</Link>
             </div>
             <img src={miniCart} alt="Carrinho" className="cart-icon" />
           </div>
@@ -70,9 +71,9 @@ export default function Header() {
           <MenuBar />
           <div className="menu-divider"></div>
           <div className="mobile-auth">
-            <a href="#" className="register-link">Cadastre-se</a>
+            <Link to="/register" className="register-link">Cadastre-se</Link>
             <div className="login-button">
-              <a href="#" className="login-link">Entrar</a>
+              <Link to="/login" className="login-link">Entrar</Link>
             </div>
           </div>
         </div>
