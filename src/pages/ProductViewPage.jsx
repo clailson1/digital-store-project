@@ -7,6 +7,7 @@ import ProductListing from "../components/ProductListing";
 import "../styles/ProductViewPage.css"
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { useParams } from "react-router-dom";
 
 const ProductViewPage = () => {
 
@@ -15,7 +16,9 @@ const ProductViewPage = () => {
     const [prodOptColor, setProdOptColor] = useState([]);
     const [linkProdRecommended, setLinkProdRecommended] = useState([]);
     const [prodRecommendedList, setProdRecommendedList] = useState([]);
-
+    const { id } = useParams(); // Obter o ID da URL
+    const [productData, setProductData] = useState(null);
+    
     async function galleryProductSlide() {
         const response = await axios.get('../src/data/galleryProductData.json');
         // console.log("galleryList response", response.data);
@@ -47,29 +50,45 @@ const ProductViewPage = () => {
     }
     
     useEffect(() => {
+        const fetchProductData = async () => {
+            try {
+                const response = await axios.get('../src/data/productData.json');
+                const product = response.data.data.find(item => item.id === parseInt(id));
+                setProductData(product);
+            } catch (error) {
+                console.error("Error fetching product data:", error);
+            }
+        };
+
         galleryProductSlide();
         prodOptionSize();
         prodOptionColor();
         linkProductRecommended();
         productRecommendedList();
-    }, []);
+        fetchProductData();
+    }, [id]);
+
+    if (!productData) {
+        return <div>Loading...</div>;
+    }
 
     return (  
         <Layout>
             <div className="prod-view-page">
-                <Gallery images={galleryProductData} 
+                <Gallery 
+                    images={galleryProductData} 
                     width={ "700px" }
                     height={ "570px" } 
                     radius={ "4px" } 
                     showThumbs
                 />
                 <BuyBox 
-                    name={ "Tênis Nike Revolution 6 Next Nature Masculino" }
-                    reference={ "REF:38416711" }
+                    name={productData.name}
+                    reference={ "REF:38416711" } // Você pode adicionar isso aos seus dados se necessário
                     stars={ "4.7" }
                     rating={ "(90 Avaliações)" }
-                    price={ "219" }
-                    priceDiscount={ "200" }
+                    price={ productData.price.toString() }
+                    priceDiscount={ productData.priceDiscount ? productData.priceDiscount.toString() : null }
                     description={ "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doelusmod tempor incididunt ut labore et dolore magna aliqua. Utenim ad minim veniam, quis nostrud exercitation ullamco." }
                 >
                     <div className="product-options">
