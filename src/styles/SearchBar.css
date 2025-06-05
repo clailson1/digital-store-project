@@ -7,12 +7,17 @@
     width: 100%;
 }
 
+.custom-search-input:focus {
+    border-color: var(--primary) !important; /* Cor da borda quando o input está em foco */
+    box-shadow: 0 0 0 0.2rem #eb619eff !important; /* Sombra ao focar */
+}
+
 .search-input {
     width: 100%;
     padding-right: 40px; /* Espaço para o botão */
     border: transparent;
     border-radius: 8px;
-    color: aqua;
+    /* color: aqua; */
 }
 
 .search-button {
@@ -33,9 +38,3 @@
 .search-button:hover {
     color: var(--primary); /* Cor do ícone ao passar o mouse */
 }
-
-::placeholder {
-    color: var(--light-gray); /* Vermelho */
-    opacity: 1; /* Garante que não fique semi-transparente em alguns navegadores */
-}
-

@@ -19,15 +19,21 @@ const BuyBox = ({ name, reference, stars, rating, price, priceDiscount, descript
                     priceDiscount ? (
                         <div className="price-discount">
                             <div className="discount-product-view">
-                                $ {priceDiscount}
+                                <h4 className="discount-product-view-h4">
+                                    $ { priceDiscount }
+                                </h4>
                             </div>
                             <div className="price-product-view" style={{ color: "var(--light-gray-2)", fontSize: "16px"}}>
-                                <s>$ {price}</s>
+                                <s>
+                                    <h4>$ {price}</h4>
+                                </s>
                             </div>
                         </div> 
                     ) : (
                         <div className="price-discount">
-                            <div className="price-product-view">$ {price}</div>
+                            <div className="price-product-view">
+                                <h4 className="price-product-view-h4">$ {price}</h4>
+                            </div>
                         </div>
                     )
                 }

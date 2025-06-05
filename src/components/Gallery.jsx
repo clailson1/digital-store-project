@@ -31,15 +31,13 @@ export default function Gallery ({width, height, radius, images, showThumbs}) {
 
     const miniatura = images.map(thumbnail =>
         <li key={thumbnail.id}>
-            <div>
-                <img        
-                    className={`img-thumbnail ${variavel === thumbnail.id ? 'selected-thumbnail' : ''}`}
-                    src={thumbnail.src} 
-                    alt={`home-slide-${thumbnail.id + 1}`}
-                    style={{width:"117px", height: "95px", borderRadius: radius}}
-                    onClick={() => setVariavel(thumbnail.id)}
-                />
-            </div>
+            <img        
+                className={`img-thumbnail ${variavel === thumbnail.id ? 'selected-thumbnail' : ''}`}
+                src={thumbnail.src} 
+                alt={`home-slide-${thumbnail.id + 1}`}
+                style={{width:"117px", height: "95px", borderRadius: radius}}
+                onClick={() => setVariavel(thumbnail.id)}
+            />
         </li>
     );
 

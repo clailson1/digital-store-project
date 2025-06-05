@@ -10,7 +10,6 @@ const HomePage = () => {
 
     const [galleryData, setGalleryData] = useState([]);
     const [productData, setProductsData] = useState([]);
-    const [sectionData, setSectionData] = useState([]);
 
     async function gallerySlide() {
         const response = await axios.get('../src/data/galleryData.json');
@@ -25,16 +24,10 @@ const HomePage = () => {
         setProductsData(response.data.data);
     }
 
-    async function sectionObject() {
-        const response = await axios.get('../src/data/sectionObject.json');
-        console.log("sectionObject response", response.data);
-        setSectionData(response.data);
-    }
 
     useEffect(() => {
         gallerySlide();
         products();
-        sectionObject();
     }, []);
 
     return (  
@@ -55,7 +48,7 @@ const HomePage = () => {
                 </div>
             </Section>
             <div className="trending-products">
-                <Section title={"Produtos em alta"} titleAlign={"left"} link={sectionData}>
+                <Section title={"Produtos em alta"} titleAlign={"left"} link={""}>
                     <ProductListing products={productData} />
                 </Section>
             </div>

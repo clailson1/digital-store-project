@@ -4,6 +4,7 @@ import ProductViewPage from "./pages/ProductViewPage";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 const App = () => {
   return ( 
@@ -15,7 +16,7 @@ const App = () => {
             <Route path="/register" element={<RegisterPage />}/>
             <Route path="/produtos" element={<ProductListingPage />}/>
             <Route path="/product/:id" element={<ProductViewPage />} />
-            <Route path="*" element={<div>Página não encontrada!</div>} />
+            <Route path="*" element={<NotFoundPage />} />
         </Routes>
     </BrowserRouter> 
     </>

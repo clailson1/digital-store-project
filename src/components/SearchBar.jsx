@@ -9,7 +9,13 @@ export default function BasicDemo() {
         <div className="flex">
              <form action="/produtos" target="_self" method="get" className="search-form">
                 <IconField className="search-field">
-                    <InputText id="filter" name="filter" placeholder="Pesquisar Produto..." required className="search-input"/>
+                    <InputText 
+                        id="filter" 
+                        name="filter" 
+                        placeholder="Pesquisar Produto..." 
+                        required 
+                        className="search-input custom-search-input"
+                    />
                     <button type="submit" className="search-button">
                         <InputIcon className="pi pi-search"></InputIcon>
                     </button>
