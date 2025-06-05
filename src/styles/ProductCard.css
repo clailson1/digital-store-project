@@ -12,7 +12,11 @@
     color: var(--dark-gray-3);
 }
 
-.product-card > h3 {
+/* .product-card > h3 {
+    padding: 15px 0 0 0;
+} */
+
+.name-titulo-prod {
     padding: 15px 0 0 0;
 }
 
@@ -31,12 +35,12 @@
     gap: 1rem;
 }
 
-.product-price {
+.p-price-h4 {
     color: var(--dark-gray);
     font-size: 24px;
 }
 
-.product-priceDiscount {
+.p-discount-h4 {
     color: var(--dark-gray);
     font-size: 24px;
 }

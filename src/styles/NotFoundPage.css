@@ -1,0 +1,24 @@
+.not-found-main-div {
+    display: flex;
+    flex-flow: column ;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 300px;
+}
+
+.btn-inicio {
+    background-color: var(--primary) !important;
+    border: 1px solid var(--primary) !important;
+}
+
+.btn-inicio:hover {
+    background-color: #b51763ff !important;
+    border: 1px solid #b51763ff !important;
+}
+
+.btn-inicio:active {
+    background-color: var(--primary) !important;
+    border: 1px solid var(--primary) !important;
+}
+

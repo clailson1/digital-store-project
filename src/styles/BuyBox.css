@@ -32,26 +32,28 @@
 }
 
 .star > h4 {
-    display: flex;
-    padding-top: 6px;
+    margin: 0;
+    font-size: 14px;
     /* color: aqua; */
 }
 
 .star-icon {
     display: flex;
-    align-self: center;
+    align-items: center;
 }
 
 .star-rating {
     display: flex;
     gap: 20px;
-    /* justify-content: center; */
     align-items: center;
+    padding: 10px 0 0 0;
+    /* background-color: chartreuse; */
 }
 
 .star-rating > h4 {
     color: var(--light-gray);
     font-size: 14px;
+    margin: 0;
 }
 
 .price-discount {
@@ -59,6 +61,7 @@
     /* background-color: brown; */
     align-items: baseline;
     gap: 20px;
+    padding: 10px 0 0 0;
 }
 
 .product-description {
@@ -67,12 +70,17 @@
     width: 50%;
 }
 
-.price-product-view {
+.price-product-view-h4 {
     color: var(--dark-gray-2);
     font-size: 32px;
 }
 
 .discount-product-view {
+    color: var(--dark-gray-2);
+    font-size: 32px;
+}
+
+.discount-product-view-h4 {
     color: var(--dark-gray-2);
     font-size: 32px;
 }
