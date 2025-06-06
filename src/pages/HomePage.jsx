@@ -32,6 +32,7 @@ const HomePage = () => {
 
     return (  
         <Layout>
+            <h1 className="site-title">Digital Store</h1>
             <Gallery
                 images={galleryData} 
                 width="1440" 

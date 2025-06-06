@@ -89,15 +89,20 @@
     height: 100%;
 }
 
+.link-login-mobile {
+    text-decoration: none;
+}
+
 .login-button {
     height: 40px;
     width: 114px;
     background-color: #C92071;
+    color: white;
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none; /* Remove sublinhado caso exista */
+    text-decoration: none; 
 }
 
 .mobile-icons {
@@ -199,6 +204,8 @@
 }
 
 .mobile-auth .register-link {
+    display: flex;
+    justify-content: center;
     text-align: left;
     padding: 8px 0;
 }

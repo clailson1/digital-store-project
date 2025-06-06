@@ -46,8 +46,8 @@ const LoginPage = () => {
                                 <Form.Label>Senha</Form.Label> 
                                 <Form.Control type='password' value={senha} onChange={e => setSenha(e.target.value)}/>
                             </div> 
-                            <div className="mt-3 mb-5">
-                                <Button variant='primary' type="submit"> {/* Mudei para type="submit" */}
+                            <div className="flex justify-content-center mt-3 mb-5">
+                                <Button variant='primary' type="submit" className="btn-inicio px-6"> {/* Mudei para type="submit" */}
                                     Acessar
                                 </Button>
                             </div>

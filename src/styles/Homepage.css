@@ -14,3 +14,18 @@
     background-color: var(--light-gray-3);
     padding: 0 200px 0 200px;
 }
+
+.site-title {
+    display: none;
+}
+
+.gallery {
+    display: flex;
+    width: 200px; /* Estilo padrão (mobile) */
+}
+
+@media (min-width: 769px) {
+    .gallery {
+        width: 100%; /* Sobrescreve no desktop */
+    }
+}

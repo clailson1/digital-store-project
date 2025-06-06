@@ -73,10 +73,10 @@ export default function Header() {
           <MenuBar />
           <div className="menu-divider"></div>
           <div className="mobile-auth">
-            <Link to="/register" className="register-link">Cadastre-se</Link>
-            <Link to="/login">
-              <span className="login-link">Entrar</span>
+            <Link to="/login" className="link-login-mobile">
+              <span className="login-button btn-inicio">Entrar</span>
             </Link>
+            <Link to="/register" className="register-link">Cadastre-se</Link>
           </div>
         </div>
       </div>

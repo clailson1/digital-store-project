@@ -12,6 +12,7 @@ ul {
 
 .footer-info {
     display: flex;
+    flex-flow: row wrap;
     padding: 100px 100px 20px 100px;
     gap: 150px;
 }

@@ -128,8 +128,8 @@ const RegisterPage = () => {
                                 />
                             </Form.Group>
                             
-                            <div className="d-grid gap-2 mb-5">
-                                <Button variant="primary" type="submit">
+                            <div className="flex justify-content-center mb-5">
+                                <Button variant="primary" type="submit" className="btn-inicio px-6">
                                     Cadastrar
                                 </Button>
                             </div>
@@ -138,7 +138,6 @@ const RegisterPage = () => {
                 </Row>
             </Container>
         </Layout>
-        
     );
 }
  
