@@ -65,8 +65,8 @@ const Footer = () => {
 
 	return (
 		<footer>
-			<div className="footer-info">
-				<div>
+			<div className="footer-info-outter">
+				<div className="footer-info-inner">
 					<div><Logo logo={logoFooter}/></div>
 					<p>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia similique et quo, laudantium in, distinctio deserunt blanditiis assumenda, error sunt impedit corporis incidunt. Incidunt et itaque, saepe nam dolor libero.
@@ -77,15 +77,11 @@ const Footer = () => {
 						<img src={twitter} alt="twitter" />
 					</div>
 				</div>
-				<div>
+				<div className="div-info">
 					<Information title={title1Data} informations={object1Data}/>
+					<Information title={title2Data} informations={object3Data}/>
 				</div>
-				<div>
-					<Information title={title2Data} informations={object2Data}/>
-				</div>
-				<div>
-					<Information title={title3Data} informations={object3Data}/>
-				</div>
+				<Information title={title3Data} informations={object2Data}/>
 			</div>
 			<hr />
 			<div>

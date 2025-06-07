@@ -4,7 +4,7 @@ export default function Information ({title, informations}) {
     return (  
         <div>
             <h4>{title}</h4>
-            <ul>{listItems}</ul>
+            <ul style={{ padding: 0}}>{listItems}</ul>
         </div>
     );
 }
